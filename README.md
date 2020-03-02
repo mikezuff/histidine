@@ -1,0 +1,2 @@
+# histidine
+CLI histogram tool
