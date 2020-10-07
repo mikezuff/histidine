@@ -1,4 +1,4 @@
-VERSION    = v0.1
+VERSION    = v0.2
 GO_LDFLAGS = -ldflags=' -X "main.Version=$(VERSION)"'
 
 histidine:

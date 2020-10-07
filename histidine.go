@@ -54,10 +54,12 @@ func main() {
 	}
 	fmt.Println("Distribution in seconds:")
 	fmt.Println(nh.String())
-	fmt.Println("p50 seconds:", nh.Quantile(0.5))
-	fmt.Println("p90 seconds:", nh.Quantile(0.9))
-	fmt.Println("p95 seconds:", nh.Quantile(0.95))
-	fmt.Println("p99 seconds:", nh.Quantile(0.99))
+	fmt.Println("p50    sec:", nh.Quantile(0.5))
+	fmt.Println("p90    sec:", nh.Quantile(0.9))
+	fmt.Println("p95    sec:", nh.Quantile(0.95))
+	fmt.Println("p99    sec:", nh.Quantile(0.99))
+	fmt.Println("p99.9  sec:", nh.Quantile(0.999))
+	fmt.Println("p99.99 sec:", nh.Quantile(0.9999))
 
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %s\n", err)
