@@ -1,5 +1,5 @@
 # histidine
-CLI histogram tool
+CLI histogram tool. Feed it numbers, one per line -> get a histogram.
 
 ## usage
 
